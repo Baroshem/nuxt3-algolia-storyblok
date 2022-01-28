@@ -1220,7 +1220,7 @@ ajv@^8.0.0, ajv@^8.0.1, ajv@^8.8.0:
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
-algoliasearch@^4.11.0:
+algoliasearch@^4.11.0, algoliasearch@^4.12.0:
   version "4.12.0"
   resolved "https://registry.yarnpkg.com/algoliasearch/-/algoliasearch-4.12.0.tgz#30f2619b6e3a5b79b6aa0f18ab66fbce88240aba"
   integrity sha512-fZOMMm+F3Bi5M/MoFIz7hiuyCitJza0Hu+r8Wzz4LIQClC6YGMRq7kT6NNU1fSSoFDSeJIwMfedbbi5G9dJoVQ==
@@ -4891,7 +4891,16 @@ std-env@^3.0.1:
   resolved "https://registry.yarnpkg.com/std-env/-/std-env-3.0.1.tgz#bc4cbc0e438610197e34c2d79c3df30b491f5182"
   integrity sha512-mC1Ps9l77/97qeOZc+HrOL7TIaOboHqMZ24dGVQrlxFcpPpfCHpH+qfUT7Dz+6mlG8+JPA1KfBQo19iC/+Ngcw==
 
-storyblok-js-client@^4.1.5:
+storyblok-algolia-indexer@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/storyblok-algolia-indexer/-/storyblok-algolia-indexer-1.0.2.tgz#5ea31ac6ade35760f743ccae733617991a50872d"
+  integrity sha512-1v0odqeKRc2FkTnTFggXPbeNLLRw7qzLya7FFDGLuKbnIPO9nVtwQjztppQeqBILwMKNTOHxmu88yUHpkYhyEA==
+  dependencies:
+    algoliasearch "^4.12.0"
+    axios "^0.25.0"
+    storyblok-js-client "^4.2.0"
+
+storyblok-js-client@^4.1.5, storyblok-js-client@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/storyblok-js-client/-/storyblok-js-client-4.2.0.tgz#f1b64b256b071aef14d915e326210a73f18a0259"
   integrity sha512-dAeZfqFrHdxyvGFEVv0glOTxLx1Y2faGN39qeLZLOGCoeK49Xg53hOl8BddxqrjTqTp93GzbqLx04r/hzXrfxA==
