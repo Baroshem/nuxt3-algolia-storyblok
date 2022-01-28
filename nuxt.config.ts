@@ -2,13 +2,16 @@ import { defineNuxtConfig } from 'nuxt3'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  build: {
+    transpile: ['#app'] // Temporary workaround for issues in Storyblok module
+  },
   buildModules: [
     ['@nuxt-modules/algolia', {
-      apiKey: '<YOUR_SEARCH_API_KEY>',
-      applicationId: '<YOUR_APPLICATION_ID>'
+      apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
+      applicationId: process.env.ALGOLIA_APP_ID,
     }],
     ['@storyblok/nuxt', {
-      accessToken: "YOUR_ACCESS_TOKEN"
+      accessToken: process.env.STORYBLOK_ACCESS_TOKEN
     }]
-  ]
+  ],
 })
