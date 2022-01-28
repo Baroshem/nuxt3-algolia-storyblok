@@ -1,4 +1,6 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 with Storyblok CMS and Algolia Search (incl. automatic indexing)
+
+This is a demo repository for an article in Dev.to.
 
 We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
