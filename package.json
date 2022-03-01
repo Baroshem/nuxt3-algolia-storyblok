@@ -11,7 +11,7 @@
     "nuxt3": "latest"
   },
   "dependencies": {
-    "@nuxt-modules/algolia": "^0.4.0",
+    "@nuxtjs/algolia": "^0.7.0",
     "storyblok-algolia-indexer": "^1.0.2"
   }
 }
